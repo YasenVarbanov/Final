@@ -1,0 +1,78 @@
+body {
+    margin: 5% ;
+    padding: 5%;
+    color: #eeeeee;
+    /* background: linear-gradient(#10b2c7,#10b2c7,#10b2c7,white); */
+    background-color: #10b2c7;
+    
+}
+h1 {
+    color: white;
+    font-size: 40px;
+} 
+div {
+    color: #eeeeee;
+}
+
+#input-Form {
+    display:contents;
+    flex-wrap: wrap;
+    /* background-color: #eeeeee; */
+    color: #eeeeee;
+    width: 1200px;
+    height: 300px;
+    align-items: center;
+    justify-content: space-around;
+}
+option {
+    width: 169.6px;
+    height: 21.2px;
+}
+::placeholder {
+    color: darkcyan;
+}
+#first-task, #second-task, #start-date, #end-date{
+    color: darkcyan;
+}
+tr, td{
+    border: solid 1px black;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+    color:black;
+ }
+#add {
+    border: double;
+    font-size: medium;
+    color: #ffffff;
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    background-color: limegreen;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+#cancel{
+    border: double;
+    font-size: medium;
+    color: #ffffff;
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    background-color: silver;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+#buttons {
+    margin: auto;
+    border-radius: 10px;
+    width: 120px;
+    height: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Record</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<h1>Add Record</h1>
+<header id="profImg">Image
+    <br>
+    <label for="profBtn"></label>
+    <input id="profBtn" type="file" accept="image/*"> </input>
+</header>
+<br>
+<br>
+<br>
+<form id="input-Form">
+    <div>
+    <!--  name -->
+    <input id="Name" type="text" placeholder="Enter Your Name..." required></input> 
+    <!--  phone -->
+    <input id="Tel" type="number" placeholder="Enter Your Phone..." required></input>
+    <!-- email -->
+    <input id="Email" type="email" placeholder="Enter Your Email..." required></input>
+    </div>
+    <br>
+    <div>
+    <!-- start-date -->
+    <label for="start-date">Start Date  </label>
+        <input id="start-date" type="date" placeholder="Select Start Date" required></input>
+    
+    <!-- end-date -->
+    <label for="end-date">End Date <input id="end-date" type="date" required></input> </label>
+    </div>
+    <br>
+    <div>
+    <!-- days left -->
+    <input id="days-left" type="number" placeholder="Day(s) left" ></input>
+    <label for="mentor"> </label> 
+    <input id="mentor" type="text" placeholder="Mentor..."></input>
+    </div>
+    <br>
+    <div>
+    <!-- 1st task -->
+        <select id="first-task">
+        <option value="">--Select 1st Task--</option>   
+        <option value="Task1">Task 1</option>
+        <option value="Task2">Task 2</option>
+        <option value="Task3">Task 3</option>
+        <option value="Task4">Task 4</option>
+        <option value="Task5">Task 5</option>
+        </select>
+    <!-- 2nd-task -->
+        <select id="second-task" >
+        <option value="">--Select 2nd Task--</option> 
+        <option value="Task1">Task 1</option>
+        <option value="Task2">Task 2</option>
+        <option value="Task3">Task 3</option>
+        <option value="Task4">Task 4</option>
+        <option value="Task5">Task 5</option>
+        </select>
+    </div>
+    <br>
+</form>
+<br>
+<br>
+<div>
+<header id="task-img">Task images
+    <br>
+    <label for="taskBtn"></label> 
+    <button id="taskBtn">Choose files</button>
+</header>
+</div>
+<div id="buttons">
+    <button id="add">Add</button>
+    <br>
+    <button id="cancel">Cancel</button>
+    
+    
+</div>
+<script src="script.js"> </script>
+<script src="table.js"></script>
+</body>
+</html>

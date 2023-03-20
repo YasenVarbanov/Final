@@ -1,0 +1,28 @@
+body {
+    margin: 5% ;
+    padding: 5%;
+    color: #eeeeee;
+    background-color: #10b2c7;
+    
+}
+h1, div {
+    color: #eeeeee;
+}
+
+#input-Form {
+    /* display: flex; */
+    flex-wrap: wrap;
+    background-color: #eeeeee;
+    color: darkcyan;
+    width: 1200px;
+    height: 300px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+::placeholder {
+    color: darkcyan;
+}
+input {
+    background-color: grey;
+}
