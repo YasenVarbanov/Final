@@ -1,42 +1,32 @@
-let addButon = document.querySelector('.addIntern');
-addButon.addEventListener('click', function() {
-  window.open("file:///C:/Users/User/Desktop/FinalTaskFrontEnd/addRecord.html");
-});
-let addBtn = document.querySelector('#add');
-addBtn.addEventListener('click', table);
+// Select the elements and add event listeners
 
-function locale() {
-  let namee = document.getElementById("Name").value;
-  let image = document.getElementById("profImg").value;
+const addRecordButton = document.getElementById('add');
+addRecordButton.addEventListener('click', addRecordToLocalStorage);
 
-  let tel = document.getElementById("Tel").value;
-  let mail = document.getElementById("Email").value;
-  let start = document.getElementById("start-date").value;
-  let end = document.getElementById("end-date").value;
-  let leftDays = document.getElementById("days-left").value;
-  let mentor = document.getElementById("mentor").value;
+// Function to add record to local storage
+function addRecordToLocalStorage() {
+  const name = document.getElementById("Name").value;
+  const image = document.getElementById("profImg").value;
+  const tel = document.getElementById("Tel").value;
+  const email = document.getElementById("Email").value;
+  const startDate = document.getElementById("start-date").value;
+  const endDate = document.getElementById("end-date").value;
+  const daysLeft = document.getElementById("days-left").value;
+  const mentor = document.getElementById("mentor").value;
 
-  let myObject = {};
+  const interns = JSON.parse(localStorage.getItem('interns')) || {};
 
-  let localStorage = window.localStorage;
-  let myValue = localStorage.getItem('namee');
-  
-  if (myValue) {
-    myObject = JSON.parse(myValue);
-  }
-
-  myObject[namee] = {
-    image: image,
-    tel: tel,
-    mail: mail,
-    start: start,
-    end: end,
-    leftDays: leftDays,
-    mentor: mentor
+  interns[name] = {
+    image,
+    tel,
+    email,
+    startDate,
+    endDate,
+    daysLeft,
+    mentor
   };
 
-  localStorage.setItem('namee', JSON.stringify(myObject));
-  console.log(myObject);
-
+  localStorage.setItem('interns', JSON.stringify(interns));
+  console.table(interns);
 }
-
+document.getElementById('table').innerHTML = interns;
